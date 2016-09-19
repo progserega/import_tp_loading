@@ -1,0 +1,16 @@
+#!/bin/bash
+
+load_xml_url="http://server/load.xml"
+import_data_file="import_load.xml"
+parser="./load_xml2osmbot_xml.py"
+
+#Генерируемый конфиг для osmobot:
+out_file="osmbot.conf"
+
+# Путь к запуску osmbot:
+osmbot_script="../osmbot/run_bot.sh"
+osmbot_config="osmbot.conf"
+
+log="import_tp_loading.log"
+email_error_to="admin@mail_server.ru"
+email_server="smtp.mail_server.ru"
